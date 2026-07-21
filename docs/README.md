@@ -1,24 +1,49 @@
-# FR Scott AI Platform
+# ScottAI
+
+ScottAI is an internal AI platform for F R Scott Ltd.
+
+Its purpose is to give employees a simple natural-language interface to trusted business data held within Merlin ERP and other internal systems.
 
 ## Vision
 
-Build an internal AI platform to improve efficiency across Sales, Procurement, Finance, Operations & Customer Service.
+Employees should be able to ask practical questions such as:
 
-## First Project
+- How much stock do we have?
+- Where is a product located?
+- Who supplies this item?
+- Is a customer on stop?
+- What is a customer's outstanding balance?
+- Which purchase orders are overdue?
+- Which products need replenishing?
 
-Sales Inbox AI
+ScottAI should retrieve trusted data from the relevant business system and present it in a concise, useful format.
 
-**Status:** Planning
+## Current Status
 
-## Long-Term Vision
+- PostgreSQL connection to Merlin proven
+- OpenAI connection proven
+- n8n installed and operational
+- Basic stock lookup working
+- Natural-language product search in development
+- Dedicated read-only database account required
 
-Build a collection of AI agents that work together across the business, including:
+## Core Principles
 
-- Sales Agent
-- Procurement Agent
-- Credit Control Agent
-- Finance Agent
-- Operations Agent
-- Merlin Assistant
+- Never invent business data
+- Use read-only database access
+- Keep business rules separate from AI prompts
+- Prefer small, reusable tools over one large workflow
+- Log and review uncertain answers
+- Protect confidential and commercially sensitive information
 
-Each agent should save time, improve accuracy & integrate with our existing Microsoft 365 & Merlin ERP systems.
+## Planned Tools
+
+- Stock Lookup
+- Product Search
+- Customer Lookup
+- Customer Balance
+- Credit Status
+- Sales History
+- Purchase Order Lookup
+- Low Stock Report
+- Daily Operations Dashboard
