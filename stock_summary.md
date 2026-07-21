@@ -1,8 +1,3 @@
-
----
-
-# `prompts/stock_summary.md`
-
 ```markdown
 # Stock Summary Prompt
 
